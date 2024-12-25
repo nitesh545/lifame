@@ -19,3 +19,9 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+components {
+  .button {
+    @apply flex items-center justify-center w-full;
+  }
+}
