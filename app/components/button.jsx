@@ -6,10 +6,10 @@ const Button = (props) => {
 		console.log("Button clicked");
 	}
 	return (
-		<div className="container mx-auto justify-center h-screen w-screen">
-			<div className="p-5 justify-center text-center content-center h-screen">
+		<div className="w-screen">
+			<div className="h-full flex justify-center content-center">
 				<button
-					className="bg-gradient-to-r from-purple-500 to-pink-500 justify-center text-center w-1/5 text-5xl rounded-xl p-10 content-center"
+					className="h-10 bg-gradient-to-r flex items-center from-purple-500 to-pink-500 text-2xl rounded-3xl p-8"
 					onClick={handleClick}
 				>
 					{props.text}
