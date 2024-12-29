@@ -2,12 +2,14 @@ import Image from "next/image";
 import Button from "@/app/components/button";
 import Input from "@/app/components/input";
 import Text from "@/app/components/text";
+import Select from "@/app/components/select";
 import React from "react";
 
 let components = [
 	{id: 1, type: "Input", component: <Input placeholder="Input"/>},
 	{id: 2, type: "Button", component: <Button text="Button"/>},
 	{id: 3, type: "Text", component: <Text text="This is my text"/>},
+	{id: 4, type: "Select", component: <Select />}
 ]
 
 export default function Home() {
@@ -16,7 +18,7 @@ export default function Home() {
 			{
 				components.map((component, index) => {
 					return (
-						<div key={component.id} className="m-10">
+						<div key={component.id} className="m-2">
 							{component.component}
 						</div>
 					)
