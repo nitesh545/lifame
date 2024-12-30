@@ -4,7 +4,7 @@ import React from 'react';
 import {useState} from 'react';
 
 const Select = () => {
-	let [selected, setSelected] = useState(null);
+	let [selected, setSelected] = useState("");
 	let handleSelect = (e) => {
 		setSelected(e.target.value);
 	}
