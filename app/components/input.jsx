@@ -12,7 +12,7 @@ const Input = (props) => {
 				<input
 					onChange={handleChange}
 					value={value}
-					className="input h-10 text-center rounded-3xl p-8 text-white text-2xl bg-gradient-to-r from-purple-600 to-pink-600"
+					className="input h-10 text-center rounded-3xl p-8 text-white placeholder:text-green-200 text-2xl bg-gradient-to-r from-purple-600 to-pink-600"
 					placeholder={props.placeholder}
 				/>
 			</div>

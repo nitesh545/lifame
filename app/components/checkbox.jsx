@@ -1,7 +1,6 @@
 "use client";
 import React from 'react';
 import {useState} from 'react';
-import Text from "@/app/components/text";
 
 const Checkbox = () => {
 	let [status, setStatus] = useState(false);

@@ -4,6 +4,7 @@ import Input from "@/app/components/input";
 import Text from "@/app/components/text";
 import Select from "@/app/components/select";
 import Checkbox from "@/app/components/checkbox";
+import Slider from "@/app/components/slider";
 import React from "react";
 
 let components = [
@@ -11,7 +12,8 @@ let components = [
 	{id: 2, type: "Button", component: <Button text="Button"/>},
 	{id: 3, type: "Text", component: <Text text="This is my text"/>},
 	{id: 4, type: "Select", component: <Select />},
-	{id: 5, type: "Checkbox", component: <Checkbox />}
+	{id: 5, type: "Checkbox", component: <Checkbox />},
+	{id: 6, type: "Slider", component: <Slider />}
 ]
 
 export default function Home() {
