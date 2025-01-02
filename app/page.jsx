@@ -6,6 +6,7 @@ import Select from "@/app/components/select";
 import Checkbox from "@/app/components/checkbox";
 import Slider from "@/app/components/slider";
 import ButtonGroup from "@/app/components/buttonGroup";
+import Stopwatch from "@/app/components/stopwatch";
 import React from "react";
 
 let components = [
@@ -16,6 +17,7 @@ let components = [
 	{id: 5, type: "Checkbox", component: <Checkbox />},
 	{id: 6, type: "Slider", component: <Slider />},
 	{id: 7, type: "ButtonGroup", component: <ButtonGroup />},
+	{id: 8, type: "Stopwatch", component: <Stopwatch />},
 ]
 
 export default function Home() {
