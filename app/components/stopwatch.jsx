@@ -1,33 +1,40 @@
 "use client";
 
 import React from 'react';
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 
 const Stopwatch = () => {
-	let [startTime, setStartTime] = useState(0);
 	let [elapsedTime, setElapsedTime] = useState(0);
-	// let [timeInterval, setTimeInterval] = useState(0);
+	let [startTime, setStartTime] = useState(0);
+	let [timeInterval, setTimeInterval] = useState(0);
 	let [display, setDisplay] = useState("00:00:00:00");
 	let timerInterval;
 
+	useEffect(() => {
+		setStartTime(Date.now() - elapsedTime);
+	}, [startTime]);
+
+	useEffect(() => {
+		displayTime(elapsedTime);
+	}, [elapsedTime]);
+
 	let startTimer = () => {
+		console.log(`${Date.now()}  :  ${elapsedTime}`);
 		setStartTime(Date.now() - elapsedTime);
 		timerInterval = (setInterval(()=>{
 			setElapsedTime(Date.now() - startTime);
-			displayTime(elapsedTime);
+			// displayTime(elapsedTime);
 		}, 10));
+		setTimeInterval(timerInterval);
 	}
 
 	let stopTimer = () => {
-		// setTimeInterval(0);
-		clearInterval(timerInterval);
+		setTimeInterval(0);
 	}
 
 	let resetTimer = () => {
-		// setTimeInterval(0);
-		clearInterval(timerInterval);
+		setTimeInterval(0);
 		setElapsedTime(0);
-		displayTime(0);
 	}
 
 	let displayTime = (time) => {
@@ -46,20 +53,22 @@ const Stopwatch = () => {
 
 	return (
 		<div className="flex">
-			<div id="display" className="p-1">{display}</div>
-			<div className="">
-				<button className="p-1" onClick={() => {
-					startTimer();
-				}}>Start
-				</button>
-				<button className="p-1" onClick={() => {
-					stopTimer();
-				}}>Stop
-				</button>
-				<button className="p-1" onClick={() => {
-					resetTimer();
-				}}>Reset
-				</button>
+			<div className="flex text-2xl p-2 rounded-3xl bg-gradient-to-r from-purple-500 to-red-500">
+				<div id="display" className="p-2 m-2 border-2 border-amber-500 rounded-xl">{display}</div>
+				<div className="ml-2">
+					<button className="p-2 m-2 border-2 border-green-400 rounded-xl" onClick={() => {
+						startTimer();
+					}}>Start
+					</button>
+					<button className="p-2 m-2 border-2 border-green-400 rounded-xl" onClick={() => {
+						stopTimer();
+					}}>Stop
+					</button>
+					<button className="p-2 m-2 border-2 border-green-400 rounded-xl" onClick={() => {
+						resetTimer();
+					}}>Reset
+					</button>
+				</div>
 			</div>
 		</div>
 	);
