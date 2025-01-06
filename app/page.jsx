@@ -7,6 +7,7 @@ import Checkbox from "@/app/components/checkbox";
 import Slider from "@/app/components/slider";
 import ButtonGroup from "@/app/components/buttonGroup";
 import Stopwatch from "@/app/components/stopwatch";
+import ProgressBar from "@/app/components/progressBar";
 import React from "react";
 
 let components = [
@@ -18,6 +19,7 @@ let components = [
 	{id: 6, type: "Slider", component: <Slider />},
 	{id: 7, type: "ButtonGroup", component: <ButtonGroup />},
 	{id: 8, type: "Stopwatch", component: <Stopwatch />},
+	{id: 9, type: "ProgressBar", component: <ProgressBar />},
 ]
 
 export default function Home() {
