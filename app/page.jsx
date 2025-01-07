@@ -8,19 +8,21 @@ import Slider from "@/app/components/slider";
 import ButtonGroup from "@/app/components/buttonGroup";
 import Stopwatch from "@/app/components/stopwatch";
 import ProgressBar from "@/app/components/progressBar";
+import Division from "@/app/components/division";
 import React from "react";
 
 let components = [
 	{id: 1, type: "Input", component: <Input placeholder="Input"/>},
 	{id: 2, type: "Button", component: <Button text="Button"/>},
-	{id: 3, type: "Text", component: <Text text="This is my text"/>},
+	{id: 3, type: "Text", component: <Text text="Simple Text"/>},
 	{id: 4, type: "Select", component: <Select />},
 	{id: 5, type: "Checkbox", component: <Checkbox />},
 	{id: 6, type: "Slider", component: <Slider />},
 	{id: 7, type: "ButtonGroup", component: <ButtonGroup />},
 	{id: 8, type: "Stopwatch", component: <Stopwatch />},
 	{id: 9, type: "ProgressBar", component: <ProgressBar />},
-]
+	{id: 10, type: "Division", component: <Division>Division with children property</Division>},
+];
 
 export default function Home() {
 	return (
