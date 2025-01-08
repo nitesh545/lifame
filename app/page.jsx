@@ -9,6 +9,7 @@ import ButtonGroup from "@/app/components/buttonGroup";
 import Stopwatch from "@/app/components/stopwatch";
 import ProgressBar from "@/app/components/progressBar";
 import Division from "@/app/components/division";
+import GlowButton from "@/app/components/glowButton";
 import React from "react";
 
 let components = [
@@ -22,6 +23,7 @@ let components = [
 	{id: 8, type: "Stopwatch", component: <Stopwatch />},
 	{id: 9, type: "ProgressBar", component: <ProgressBar />},
 	{id: 10, type: "Division", component: <Division>Division with children property</Division>},
+	{id: 11, type: "GlowButton", component: <GlowButton />},
 ];
 
 export default function Home() {
