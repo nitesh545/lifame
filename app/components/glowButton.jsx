@@ -16,15 +16,12 @@ const GlowButton = () => {
 	}
 
 	return (
-
-			<div className={isGlowing ? "blur-lg bg-gradient-to-r from-red-500 to-purple-500" : "shadow-2xl shadow-cyan-500"}>
-			<button className="w-full rounded-3xl" onClick={handleGlowing}>
-				<Division>
+		<div className="relative">
+			<div className={isGlowing ? "absolute blur-xl bg-gradient-to-r from-red-500 to-purple-500 p-5 rounded-3xl" : "absolute bg-gradient-to-r from-purple-500 to-red-500 rounded-3xl p-5"}>Glow Button</div>
+			<button className="relative w-full rounded-3xl p-5 bg-gradient-to-r from-purple-500 to-red-500" onClick={handleGlowing}>
 				Glow Button
-				</Division>
 			</button>
-			</div>
-
+		</div>
 	);
 };
 
