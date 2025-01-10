@@ -11,6 +11,7 @@ import ProgressBar from "@/app/components/progressBar";
 import Division from "@/app/components/division";
 import GlowButton from "@/app/components/glowButton";
 import React from "react";
+import GlowProgressBar from "@/app/components/glowProgressBar";
 
 let components = [
 	{id: 1, type: "Input", component: <Input placeholder="Input"/>},
@@ -24,6 +25,7 @@ let components = [
 	{id: 9, type: "ProgressBar", component: <ProgressBar />},
 	{id: 10, type: "Division", component: <Division>Division with children property</Division>},
 	{id: 11, type: "GlowButton", component: <GlowButton />},
+	{id: 12, type: "GlowProgressBar", component: <GlowProgressBar />},
 ];
 
 export default function Home() {
