@@ -58,15 +58,15 @@ const Stopwatch = () => {
 			<div className="flex text-2xl p-2 rounded-3xl bg-gradient-to-r from-purple-500 to-red-500">
 				<div id="display" className="p-2 m-2 border-2 border-amber-500 rounded-xl">{display}</div>
 				<div className="ml-2">
-					<button className="p-2 m-2 border-2 border-green-400 rounded-xl" onClick={() => {
+					<button className="p-2 m-2 border-2 border-blue-950 rounded-xl" onClick={() => {
 						startTimer();
 					}}>Start
 					</button>
-					<button className="p-2 m-2 border-2 border-green-400 rounded-xl" onClick={() => {
+					<button className="p-2 m-2 border-2 border-blue-950 rounded-xl" onClick={() => {
 						stopTimer();
 					}}>Stop
 					</button>
-					<button className="p-2 m-2 border-2 border-green-400 rounded-xl" onClick={() => {
+					<button className="p-2 m-2 border-2 border-blue-950 rounded-xl" onClick={() => {
 						resetTimer();
 					}}>Reset
 					</button>

@@ -15,7 +15,7 @@ const ButtonGroup = () => {
 						buttons.map((button, index) => {return (
 							<button
 								key={index}
-								className="text-white m-1 text-2xl p-5 rounded-3xl border-2 border-green-400"
+								className="text-white m-1 text-2xl p-5 rounded-3xl border-2 border-blue-950"
 								onClick={() => {
 									console.log(`${button} button clicked`);
 								}}
