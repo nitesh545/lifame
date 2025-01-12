@@ -8,7 +8,7 @@ const Randomizer = () => {
 	const [value, setValue] = useState(0);
 
 	const randmValue = () => {
-		setValue(Math.floor(((Math.random() * 10)/2)));
+		setValue(Math.floor(((Math.random() * 10))));
 	};
 
 	return (
