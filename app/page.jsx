@@ -14,6 +14,7 @@ import React from "react";
 import GlowProgressBar from "@/app/components/glowProgressBar";
 import Randomizer from "@/app/components/randomizer";
 import ShadowButton from "@/app/components/shadowButton";
+import RoundButton from "@/app/components/roundButton";
 
 let components = [
 	{id: 1, type: "Input", component: <Input placeholder="Input"/>},
@@ -30,6 +31,7 @@ let components = [
 	{id: 12, type: "GlowProgressBar", component: <GlowProgressBar />},
 	{id: 13, type: "Randomizer", component: <Randomizer />},
 	{id: 14, type: "ShadowButton", component: <ShadowButton />},
+	{id: 15, type: "RoundButton", component: <RoundButton />},
 ];
 
 export default function Home() {
