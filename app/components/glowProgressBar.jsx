@@ -17,7 +17,7 @@ const GlowProgressBar = () => {
 
 	const updateProgress = () => {
 		setTimeout(() => {
-			setProgress(progress + 1);
+			setProgress(prevState => prevState + 1);
 		}, 25);
 	};
 

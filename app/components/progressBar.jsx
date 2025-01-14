@@ -25,7 +25,7 @@ const ProgressBar = () => {
 
 	const updateProgress = () => {
 		setTimeout(() => {
-			setProgress(progress+1);
+			setProgress(prev => prev + 1);
 		}, 25);
 	}
 
