@@ -6,7 +6,7 @@ const Button = (props) => {
 		console.log("Button clicked");
 	}
 	return (
-		<div className="w-screen">
+		<div className="w-full">
 			<div className="h-full flex justify-center content-center">
 				<button
 					className="h-10 bg-gradient-to-r flex items-center from-purple-500 to-pink-500 text-2xl rounded-3xl p-8"

@@ -11,7 +11,7 @@ const Slider = () => {
 	}
 
 	return (
-		<div className="w-screen">
+		<div className="w-full">
 			<div className="flex justify-center content-center items-center">
 				<input
 					type="range"
@@ -24,7 +24,7 @@ const Slider = () => {
 					// [&::-webkit-slider-runnable-track]:rounded-3xl
 					// [&::-webkit-slider-thumb]:bg-red-500
 					// [&::-webkit-slider-thumb]:rounded-full"
-					className="w-1/5 appearance-none h-2 bg-gradient-to-r from-purple-500 to-red-500 rounded-3xl cursor-pointer accent-blue-500"
+					className="w-72 appearance-none h-2 bg-gradient-to-r from-purple-500 to-red-500 rounded-3xl cursor-pointer accent-blue-500"
 				/>
 			</div>
 		</div>

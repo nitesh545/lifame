@@ -16,8 +16,9 @@ import Randomizer from "@/app/components/randomizer";
 import ShadowButton from "@/app/components/shadowButton";
 import RoundButton from "@/app/components/roundButton";
 import Text1 from "@/app/components/text1";
+import Button1 from "@/app/components/button1";
 
-let components = [
+let components1 = [
 	{id: 1, type: "Input", component: <Input placeholder="Input"/>},
 	{id: 2, type: "Button", component: <Button text="Button"/>},
 	{id: 3, type: "Text", component: <Text text="Simple Text"/>},
@@ -33,21 +34,38 @@ let components = [
 	{id: 13, type: "Randomizer", component: <Randomizer />},
 	{id: 14, type: "ShadowButton", component: <ShadowButton />},
 	{id: 15, type: "RoundButton", component: <RoundButton />},
-	{id: 16, type: "Text1", component: <Text1 />},
+];
+
+let components2 = [
+	{id: 1, type: "Text1", component: <Text1 />},
+	{id: 2, type: "Button1", component: <Button1 text="Button1"/>}
 ];
 
 export default function Home() {
 	return (
-		<div className="h-screen w-screen flex flex-col items-center justify-center">
-			{
-				components.map((component, index) => {
-					return (
-						<div key={component.id} className="m-2">
-							{component.component}
-						</div>
-					)
-				})
-			}
+		<div className="flex w-screen h-screen justify-around">
+			<div className="flex flex-col items-start justify-center content-center">
+				{
+					components1.map((component, index) => {
+						return (
+							<div key={component.id} className="m-2">
+								{component.component}
+							</div>
+						)
+					})
+				}
+			</div>
+			<div className="flex flex-col items-start justify-center content-center">
+				{
+					components2.map((component, index) => {
+						return (
+							<div key={component.id} className="m-2">
+								{component.component}
+							</div>
+						)
+					})
+				}
+			</div>
 		</div>
 	);
 }

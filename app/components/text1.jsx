@@ -9,7 +9,7 @@ const Text1 = () => {
 		setText(e.target.value);
 	}
 	return (
-		<div className="w-screen">
+		<div className="w-full">
 			<div className="flex justify-center content-center items-center">
 				<input
 					onChange={(e) => updateText(e)}

@@ -13,7 +13,7 @@ const RoundButton = () => {
 	useEffect(() => {console.log(`Hover button pressed: ${value} times`)}, [value]);
 
 	return (
-		<div className="w-screen">
+		<div className="w-full">
 			<div className="flex justify-center content-center items-center">
 				<button
 					className="p-5 text-2xl text-white bg-gradient-to-r from-purple-500 to-red-500 rounded-bl-2xl

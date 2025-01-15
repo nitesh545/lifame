@@ -7,7 +7,7 @@ const Input = (props) => {
 		setValue(e.target.value);
 	}
 	return (
-		<div className="w-screen">
+		<div className="w-full">
 			<div className="h-full flex justify-center content-center items-center">
 				<input
 					onChange={handleChange}

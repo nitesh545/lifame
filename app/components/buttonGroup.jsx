@@ -8,7 +8,7 @@ const buttons = [
 
 const ButtonGroup = () => {
 	return (
-		<div className="w-screen">
+		<div className="w-full">
 			<div className="flex justify-center content-center items-center">
 				<div className="flex bg-gradient-to-r from-purple-500 to-red-500 rounded-3xl">
 					{
