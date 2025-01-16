@@ -15,8 +15,9 @@ import GlowProgressBar from "@/app/components/glowProgressBar";
 import Randomizer from "@/app/components/randomizer";
 import ShadowButton from "@/app/components/shadowButton";
 import RoundButton from "@/app/components/roundButton";
-import Text1 from "@/app/components/text1";
+import Input1 from "@/app/components/input1";
 import Button1 from "@/app/components/button1";
+import Text1 from "@/app/components/text1";
 
 let components1 = [
 	{id: 1, type: "Input", component: <Input placeholder="Input"/>},
@@ -37,8 +38,9 @@ let components1 = [
 ];
 
 let components2 = [
-	{id: 1, type: "Text1", component: <Text1 />},
-	{id: 2, type: "Button1", component: <Button1 text="Button1"/>}
+	{id: 1, type: "Input", component: <Input1 />},
+	{id: 2, type: "Button", component: <Button1 text="Button1"/>},
+	{id: 3, type: "Text", component: <Text1 text="Simple Text"/>},
 ];
 
 export default function Home() {
