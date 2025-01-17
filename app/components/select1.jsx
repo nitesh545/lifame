@@ -3,7 +3,7 @@
 import React from 'react';
 import {useState} from 'react';
 
-const Select = () => {
+const Select1 = () => {
 	let [selected, setSelected] = useState("");
 	let handleSelect = (e) => {
 		setSelected(e.target.value);
@@ -14,7 +14,7 @@ const Select = () => {
 				<select
 					name="chose"
 					value={selected}
-					className="text-white text-2xl rounded-3xl p-5 bg-gradient-to-r from-purple-500 to-pink-500 bg-purple-600"
+					className="text-white text-2xl rounded-3xl p-5 bg-gradient-to-r from-purple-500 bg-blue-950"
 					onChange={handleSelect}
 				>
 					<option className="text-black" value="1">One</option>
@@ -27,4 +27,4 @@ const Select = () => {
 	);
 };
 
-export default Select;
+export default Select1;

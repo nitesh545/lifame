@@ -18,6 +18,7 @@ import RoundButton from "@/app/components/roundButton";
 import Input1 from "@/app/components/input1";
 import Button1 from "@/app/components/button1";
 import Text1 from "@/app/components/text1";
+import Select1 from "@/app/components/select1";
 
 let components1 = [
 	{id: 1, type: "Input", component: <Input placeholder="Input"/>},
@@ -41,6 +42,7 @@ let components2 = [
 	{id: 1, type: "Input", component: <Input1 />},
 	{id: 2, type: "Button", component: <Button1 text="Button1"/>},
 	{id: 3, type: "Text", component: <Text1 text="Simple Text"/>},
+	{id: 4, type: "Select", component: <Select1 />},
 ];
 
 export default function Home() {
