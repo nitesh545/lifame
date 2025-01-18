@@ -1,4 +1,5 @@
 import Image from "next/image";
+import React from "react";
 import Button from "@/app/components/button";
 import Input from "@/app/components/input";
 import Text from "@/app/components/text";
@@ -10,7 +11,6 @@ import Stopwatch from "@/app/components/stopwatch";
 import ProgressBar from "@/app/components/progressBar";
 import Division from "@/app/components/division";
 import GlowButton from "@/app/components/glowButton";
-import React from "react";
 import GlowProgressBar from "@/app/components/glowProgressBar";
 import Randomizer from "@/app/components/randomizer";
 import ShadowButton from "@/app/components/shadowButton";
@@ -19,6 +19,7 @@ import Input1 from "@/app/components/input1";
 import Button1 from "@/app/components/button1";
 import Text1 from "@/app/components/text1";
 import Select1 from "@/app/components/select1";
+import Checkbox1 from "@/app/components/checkbox1";
 
 let components1 = [
 	{id: 1, type: "Input", component: <Input placeholder="Input"/>},
@@ -43,6 +44,7 @@ let components2 = [
 	{id: 2, type: "Button", component: <Button1 text="Button1"/>},
 	{id: 3, type: "Text", component: <Text1 text="Simple Text"/>},
 	{id: 4, type: "Select", component: <Select1 />},
+	{id: 5, type: "Checkbox", component: <Checkbox1 />},
 ];
 
 export default function Home() {
