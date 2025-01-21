@@ -21,6 +21,7 @@ import Text1 from "@/app/components/text1";
 import Select1 from "@/app/components/select1";
 import Checkbox1 from "@/app/components/checkbox1";
 import Slider1 from "@/app/components/slider1";
+import ButtonGroup1 from "@/app/components/buttonGroup1";
 
 let components1 = [
 	{id: 1, type: "Input", component: <Input placeholder="Input"/>},
@@ -47,6 +48,7 @@ let components2 = [
 	{id: 4, type: "Select", component: <Select1 />},
 	{id: 5, type: "Checkbox", component: <Checkbox1 />},
 	{id: 6, type: "Slider", component: <Slider1 />},
+	{id: 7, type: "ButtonGroup", component: <ButtonGroup1 />}
 ];
 
 export default function Home() {
