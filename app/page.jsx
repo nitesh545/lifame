@@ -23,6 +23,7 @@ import Checkbox1 from "@/app/components/checkbox1";
 import Slider1 from "@/app/components/slider1";
 import ButtonGroup1 from "@/app/components/buttonGroup1";
 import ProgressBar1 from "@/app/components/progressBar1";
+import Division1 from "./components/division1";
 
 let components1 = [
 	{id: 1, type: "Input", component: <Input placeholder="Input"/>},
@@ -51,6 +52,7 @@ let components2 = [
 	{id: 6, type: "Slider", component: <Slider1 />},
 	{id: 7, type: "ButtonGroup", component: <ButtonGroup1 />},
 	{id: 8, type: "ProgressBar", component: <ProgressBar1 />},
+	{id: 9, type: "Division", component: <Division1>Division Variant 1</Division1>},
 ];
 
 export default function Home() {
